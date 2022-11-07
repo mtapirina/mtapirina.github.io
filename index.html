@@ -1,9 +1,509 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
 <body>
-  <h1>MARIA M. TAPIRINA</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <h1>HTML Cheat Sheet</h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#page-tag">Page Tags</a></li>
+            <li><a href="#table-tag">Table Tags</a></li>
+            <li><a href="#layout-tag">Layout Tags</a></li>
+            <li><a href="#text-tag">Text Tags</a></li>
+            <li><a href="#List-tag">List Tags</a></li>
+            <li><a href="#media-tag">Media Tags</a></li>
+            <li><a href="#attributes">Attributes</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#about">About me</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        
+        <h2 id="html">HTML</h2>
+        <p><strong>HTML</strong> (HyperText Markup Language) is used to give content to a web page and instructs 
+            web browsers on how to structure that content.
+        </p>
+
+        <h3>HTML Tags</h3>
+        <p>HTML element (or simply, <strong>element</strong>) — a unit of content in an HTML document formed by HTML tags and the text or media it contains. 
+            HTML Tag — the element name, surrounded by an opening (&lt;) and closing (&gt;) angle bracket.</p>
+
+
+        <div class="example">
+                <p class="teg"><strong>&lt;<span>h1</span>&gt;</strong> My 
+                    First Heading <strong>&lt;<span>h1</span>&gt;</strong></p>
+        </div>
+
+        <h3>HTML Structure</h3>          
+        <p>HTML is organized as a collection of family tree relationships. 
+            As you saw in the last exercise, we placed <strong>&lt;<span>h1</span>&gt;</strong> 
+            tags within <strong>&lt;<span>body</span>&gt;</strong> tags. When an element is contained inside another element, 
+            it is considered the child of that element. The child element is said to be nested inside of the parent element.
+        </p>
+
+        <div class="example">
+            <p><strong>&lt;<span>body</span>&gt;</strong><br></p> 
+            <p class="teg"><strong>&lt;<span>h1</span>&gt;</strong> This header is a child of the body <strong>&lt;<span>h1</span>&gt;</strong><br></p>  
+            <p><strong>&lt;<span>/body</span>&gt;</strong></p>  
+               
+        </div>
+
+        <h2 id="page-tag">HTML Page Tag Group</h2>
+        <p>The Page Tag Group is a group of tags that are used to define the structure of a web page. All web pages require a well-defined page structure 
+            with a handful of foundational tags. This structure allows browsers to correctly process and render the pages.</p>
+
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><strong>&lt;<span>!DOCTYPE html</span>&gt;</strong></td>
+                    <td>Document Type Declaration</td>
+                    <td>The document type declaration <strong>&lt;<span>!DOCTYPE html</span>&gt;</strong>
+                        is required as the  rst line of an HTML document. The doctype declaration is an instruction to the browser about what type of document 
+                        to expect and which version of HTML is being used, in this case it&apos;s HTML5.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>html</span>&gt;</strong></td>
+                    <td>HTML</td>
+                    <td>The <html> element, the root of an HTML document, should be added after the
+                        <strong>!DOCTYPE</strong> declaration. All content/structure for an HTML document should be contained between the 
+                        opening and closing <strong>&lt;<span>html</span>&gt;</strong> tags</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>head</span>&gt;</strong></td>
+                    <td>Head</td>
+                    <td>The <strong>&lt;<span>head</span>&gt;</strong> element contains general information about an HTML page that is not displayed on the page 
+                        itself. This information is called metadata and includes things like the title of the HTML document and links to stylesheets</td>
+                </tr>
+                <td><strong>&lt;<span>meta</span>&gt;</strong></td>
+                    <td>Metadata</td>
+                    <td>The <strong>&lt;<span>meta</span>&gt;</strong> tag defines metadata about an HTML document. Metadata is data (information) about data. 
+                        <strong>&lt;<span>meta</span>&gt;</strong> tags always go inside the <strong>&lt;<span>head</span>&gt;</strong> element, and are typically 
+                        Metadata will not be displayed on the page, but is machine parsable.</td>
+                </tr>
+                <td><strong>&lt;<span>link</span>&gt;</strong></td>
+                    <td>link Tag</td>
+                    <td>The <strong>&lt;<span>link</span>&gt;</strong> tag loads a linked resource into a page.
+                        This tag is used to include a stylesheet or a favicon into a page.
+                        Links are placed in the <strong>&lt;<span>head</span>&gt;</strong> section of the page.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>title</span>&gt;</strong></td>
+                    <td>Title</td>
+                    <td>The <strong>&lt;<span>title</span>&gt;</strong> element contains a text that de nes the title of an HTML document. 
+                        The title is displayed in the browser's title bar or tab in which the HTML page is displayed. The <strong>&lt;<span>title</span>&gt;</strong>
+                        element can only be contained inside a document's element</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>body</span>&gt;</strong></td>
+                    <td>Body</td>
+                    <td>The <strong>&lt;<span>body</span>&gt;</strong> element represents the content of an HTML document. Content inside 
+                        <strong>&lt;<span>body</span>&gt;</strong> tags are rendered on the web browsers.
+                        There can be only one <strong>&lt;<span>body</span>&gt;</strong> element in a document.</td>
+                </tr> 
+                <tr>
+                    <td><strong>&lt;<span>&excl;--&period;&period;&period;--</span>&gt;</strong></td>
+                    <td>Comments</td>
+                    <td>In HTML, comments can be added between an opening <strong>&lt;<span>&excl;--</span></strong> and closing <strong><span>--</span>&gt;</strong>. 
+                        Content inside of comments will not be rendered by browsers. Comments can span single or multiple lines.</td>
+                </tr>
+                    
+
+            </tbody>
+        </table>
+
+        <h2 id="layout-tag">Layout Tag Group</h2>
+        <p>The Layout Tag Group is a group of tags that define document layouts. Most web pages require a layout with headers, columns, footers, and other sections.
+            This is similare to how a magazine or a newspaper page is organized. Layout tags define areas on a page that contain content. 
+            Layout tags define areas on a page that contain content. By default these tags have no visual appearance, but they are often styled with a border or background color</p>
+
+
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>    
+                <tr>
+                    <td><strong>&lt;<span>header</span>&gt;</strong></td>
+                    <td>Header</td>
+                    <td>The <strong>&lt;<span>header</span>&gt;</strong> element represents a container for introductory content or a set of navigational links. 
+                        A <strong>&lt;<span>header</span>&gt;</strong> element typically contains one or more heading elements (<strong>&lt;<span>h1</span>&gt;</strong>
+                         - <strong>&lt;<span>h6</span>&gt;</strong>), logo or icon or authorship information</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>main</span>&gt;</strong></td>
+                    <td>Main</td>
+                    <td>The <strong>&lt;<span>main</span>&gt;</strong> tag specifies the main content of a document. The content inside the 
+                        <strong>&lt;<span>main</span>&gt;</strong> element should be unique to the document. It should not contain any content that is repeated 
+                        across documents such as sidebars, navigation links, copyright information, site logos, and search forms. </td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>footer</span>&gt;</strong></td>
+                    <td>Footer</td>
+                    <td>The <strong>&lt;<span>footer</span>&gt;</strong> tag defines a footer for a document or section.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>nav</span>&gt;</strong></td>
+                    <td>Navigation tag</td>
+                    <td>The <strong>&lt;<span>nav</span>&gt;</strong> tag creates a container for navigation elements. It can hold navigation menus, quicklinks, table of contents, etc.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>aside</span>&gt;</strong></td>
+                    <td>Aside content</td>
+                    <td>The <strong>&lt;<span>aside</span>&gt;</strong> tag defines some content aside from the content it is placed in. The aside content should be 
+                        indirectly related to the surrounding content.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>article</span>&gt;</strong></td>
+                    <td>Article</td>
+                    <td>The <strong>&lt;<span>article</span>&gt;</strong> tag specifies independent, self-contained content. An article should make sense on its own 
+                        and it should be possible to distribute it independently from the rest of the site. It's used for blog posts, forums, newspaper articles, and more. 
+                        E-commerce articles include product descriptions, product cards, etc.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>section</span>&gt;</strong></td>
+                    <td>Section</td>
+                    <td>The <strong>&lt;<span>section</span>&gt;</strong> tag defines a section in a document. The <strong>&lt;<span>section</span>&gt;</strong> 
+                        element contains stand-alone text or content.  Of all semantic tags, <strong>&lt;<span>section</span>&gt;</strong> is the closest to a 
+                        <strong>&lt;<span>div</span>&gt;</strong>.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>div</span>&gt;</strong></td>
+                    <td>Division</td>
+                    <td><strong>&lt;<span>div</span>&gt;</strong>s short for “division” or a container that divides the page into sections.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="table-tag">Table Tag Group</h2>
+        <p>The Table Tag Group is a group of tags that are used to create HTML tables.  HTML tables present tabular data.</p>
+
+        <table>
+            <thead>
+                  <th>Tag</th>
+                  <th>Name</th>
+                  <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>&lt;<span>table</span>&gt;</strong></td>
+                    <td>Tabular display of data</td>
+                    <td>The <strong>&lt;<span>table</span>&gt;</strong> tag creates an HTML table. A table is a tabular display of data, arranged in rows and columns. 
+                        Tables are highly configurable with captions, headers, footers, column and row spans, and more.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>thead</span>&gt;</strong></td>
+                    <td>Header of the table</td>
+                    <td>The <strong>&lt;<span>thead</span>&gt;</strong> element is used in conjunction with the <strong>&lt;<span>tbody</span>&gt;</strong>
+                        and <strong>&lt;<span>tfoot</span>&gt;</strong> elements to specify each part of a table (header, body, footer).</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>tbody</span>&gt;</strong></td>
+                    <td>Table body content</td>
+                    <td>The <strong>&lt;<span>tbody</span>&gt;</strong> tag is used to group the body content in an HTML table. 
+                        The <strong>&lt;<span>tbody</span>&gt;</strong> element is used in conjunction with the <strong>&lt;<span>thead</span>&gt;</strong> and 
+                        <strong>&lt;<span>tfoot</span>&gt;</strong> elements to specify each part of a table (body, header, footer). </td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>tfoot</span>&gt;</strong></td>
+                    <td>Table footer content</td>
+                    <td>The <strong>&lt;<span>tfoot</span>&gt;</strong> tag is used to group footer content in an HTML table. 
+                        The <strong>&lt;<span>tfoot</span>&gt;</strong> element is used in conjunction with the <strong>&lt;<span>thead</span>&gt;</strong> 
+                        and <strong>&lt;<span>tbody</span>&gt;</strong> elements to specify each part of a table (footer, header, body).
+                        </td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>tr</span>&gt;</strong></td>
+                    <td>Table row</td>
+                    <td>The <strong>&lt;<span>tr</span>&gt;</strong> tag creates a table row in an HTML table. Each row is a container for one or more table cells. 
+                        A table can have any number of rows.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>th</span>&gt;</strong></td>
+                    <td>Table header cell</td>
+                    <td>The <strong>&lt;<span>th</span>&gt;</strong> tag adds a table header cell to an HTML table. Each table header cell contains a title that 
+                        describes the data in the cells below.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>td</span>&gt;</strong></td>
+                    <td>Table data cell</td>
+                    <td>The <strong>&lt;<span>td</span>&gt;</strong> tag adds a table cell to an HTML table. A table cell is a boxed area that displays a single data item</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+        <h2 id="text-tag">Text Tag Group</h2>
+        <p>The Text Tag Group is a group of tags that are used to create well-formatted text documents. Tip: More recently, text formatting and styling has shifted from 
+            HTML to CSS.</p>
+
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>&lt;<span>h1</span>&gt;</strong>...<strong>&lt;<span>h6</span>&gt;</strong></td>
+                    <td>Headings</td>
+                    <td>Headings in HTML are similar to headings in other types of media.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>p</span>&gt;</strong></td>
+                    <td>Paragraph</td>
+                    <td>A paragraph is a distinct section of text with spacing before and after.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>span</span>&gt;</strong></td>
+                    <td>Span</td>
+                    <td>The <strong>&lt;<span>span</span>&gt;</strong> tag is an inline container used to mark up a part of a text, or a part of a 
+                        document.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>br</span>&gt;</strong></td>
+                    <td>Line Breaks</td>
+                    <td>The <strong>&lt;<span>br</span>&gt;</strong> tag in HTML document is used to create a line break in a text.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>em</span>&gt;</strong></td>
+                    <td>Emphasis Element</td>
+                    <td>The <strong>&lt;<span>em</span>&gt;</strong> tag will generally render as <strong><em>italic</em></strong> emphasis.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>strong</span>&gt;</strong></td>
+                    <td>Bold text style</td>
+                    <td>The <strong>&lt;<span>strong</span>&gt;</strong> will generally render as <strong>bold</strong> emphasis.</td>
+                </tr>
+                
+
+            </tbody>
+        </table>
+
+        <h2 id="list-tag">List Tag Group</h2>
+        <p>The List Tag Group is a group of tags that are used to define lists of data items. A list is a sequential display of related items. 
+            HTML supports 3 list types: unordered lists, ordered lists, and datalists. Each of these list types have their own tags.
+        </p>
+
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>&lt;<span>ul</span>&gt;</strong></td>
+                    <td>Unordered Lists</td>
+                    <td>An unordered list outlines individual list items with a <strong>bullet point</strong>.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>ol</span>&gt;</strong></td>
+                    <td>Ordered Lists</td>
+                    <td>Ordered lists are like unordered lists (<strong>&lt;<span>ul</span>&gt;</strong>), except that each list item is <strong>numbered</strong>.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>li</span>&gt;</strong></td>
+                    <td>List</td>
+                    <td>The <strong>&lt;<span>li</span>&gt;</strong> tag defines a list item. The <strong>&lt;<span>li</span>&gt;</strong> tag 
+                        is used inside ordered lists(<strong>&lt;<span>ol</span>&gt;</strong>), unordered lists (<strong>&lt;<span>ul</span>&gt;</strong>).</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <h2 id="media-tag">Media Tag Group</h2>
+        <p>The Media Tag Group is a group of tags that help with creating multi-media experiences on a web page. With increasing bandwidths, multi-media is 
+            becoming very important in web development. These include&colon; images, animations, audio, and video.</p>
+
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><strong>&lt;<span>audio</span>&gt;</strong></td>
+                    <td>Audio</td>
+                    <td>The <strong>&lt;<span>audio</span>&gt;</strong> element creates a player for sound such as music, sound effects, or others.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>video</span>&gt;</strong></td>
+                    <td>Video</td>
+                    <td>The <strong>&lt;<span>video</span>&gt;</strong> element embeds a media player for video playback. The <strong>src</strong> 
+                        attribute will contain the URL to the video. Adding the
+                        controls attribute will display video controls in the media player.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>img</span>&gt;</strong></td>
+                    <td>Image</td>
+                    <td>HTML image <strong>&lt;<span>img</span>&gt;</strong> elements embed images in documents. The <strong>src</strong> attribute contains the image URL and is mandatory. 
+                        <strong>&lt;<span>img</span>&gt;</strong> is an empty element meaning it should not have a closing tag.</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>figure</span>&gt;</strong></td>
+                    <td>Figure - embedded object</td>
+                    <td>The <strong>&lt;<span>figure</span>&gt;</strong> tag creates a container that can embed any of the following: <strong>Images, Illustrations, 
+                        Infographics, Code Snippets</strong>, and others</td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;<span>figcaption</span>&gt;</strong></td>
+                    <td>Figure caption</td>
+                    <td>The <strong>&lt;<span>figcaption</span>&gt;</strong> tag adds a description to a <strong>&lt;<span>figure</span>&gt;</strong>. 
+                        Figure captions summarize or describe the figure or image.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="attributes">HTML Attributes</h2>          
+        <p>Attributes provide features or functionality to an element. Attributes are placed inside the element&apos;s opening tag. An element can have any number of attributes.</p>
+
+        <div class="example">
+            <p><strong>&lt;<span>p</span> id&equals;<span>&quot;my-paragraph&quot;</span> class&equals;<span>&quot;black&quot;</span> 
+                style&equals;<span>&quot;color: black;&quot;&gt;</strong>
+                This example is a paragraph with 3 attributes: <strong>id</strong>, <strong>class</strong>, and <strong>style</strong>.
+                <strong>&lt;<span>/p</span>&gt;</strong></p>  
+               
+        </div>
+
+
+        <table>
+            <thead>
+                <th>Attribute</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong><span>id</span></strong></td>
+                    <td>Unique ID Attributes</td>
+                    <td>In HTML, specific and unique <strong><span>id</span></strong> attributes can be assigned to different elements in order to differentiate between them.
+                        When needed, the id value can be called upon by CSS and JavaScript to manipulate, format, and perform specific 
+                        instructions on that element and that element only. Valid <strong><span>id</span></strong> attributes should begin with a letter and should 
+                        only contain letters <strong>( a - Z )</strong>, digits <strong>( 0 - 9 )</strong>, hyphens <strong>( - )</strong>, 
+                        underscores <strong>( &lowbar; )</strong>, and periods <strong>( . )</strong>.</td>
+                </tr>
+                <tr>
+                    <td><strong><span>alt</span></strong></td>
+                    <td>alt Attribute</td>
+                    <td>An <strong>&lt;<span>img</span>&gt;</strong> element can have alternative text via the <strong><span>alt</span></strong> attribute. The alternative text will be
+                        displayed if an image fails to render due to an incorrect URL, if the image format is not supported by the browser, if the image is blocked from being displayed, 
+                        or if the image has not been received from the URL.</td>
+                </tr>
+                <tr>
+                    <td><strong><span>href</span></strong></td>
+                    <td>href Attribute</td>
+                    <td>The <strong><span>href</span></strong> attribute defines a <strong>link address</strong> for an <strong><span>a</span></strong> tag.</td>
+                </tr>
+                <tr>
+                    <td><strong><span>target</span></strong></td>
+                    <td>Target Attribute</td>
+                    <td>The <strong><span>target</span></strong> attribute on an <strong>&lt;<span>a</span>&gt;</strong> anchor element speci es where a hyperlink should be opened. 
+                        A <strong><span>target</span></strong> value of <strong>&quot;_blank&quot;</strong> will tell the browser to open the hyperlink in a new tab in modern browsers, 
+                        or in a new window in older browsers or if the browser has had settings changed to open hyperlinks in a new window.</td>
+                </tr>
+                <tr>
+                    <td><strong><span>src</span></strong></td>
+                    <td>src Attribute</td>
+                    <td>The <strong><span>src</span></strong> attribute specifies the URL or path of the <strong>image</strong> to be displayed.</td>
+                </tr>
+                <tr>
+                    <td><strong><span>lang</span></strong></td>
+                    <td>lang Attribute</td>
+                    <td>The <strong>&lt;<span>html</span>&gt;</strong> element has a <strong><span>lang</span></strong> attribute which specifies the document <strong>language</strong>.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="links">HTML Links</h2>
+        <p>A link is an element that, when clicked, redirects the user to another web page. Links are usually text-based, but they can also be an image or otherwise.</p>
+        
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>&lt;<span>a</span>&gt;</strong></td>
+                    <td>Anchor</td>
+                    <td>The <strong>&lt;<span>a</span>&gt;</strong> anchor element is used to create hyperlinks in an HTML document. The 
+                        hyperlinks can point to other webpages,les on the same server, a location on the same page, or any other URL via 
+                        the hyperlink reference attribute, <strong>href</strong>. The <strong>href</strong> determines the location the anchor element points to.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Link to a Different Part of the Page &num;</h3>          
+        <p>The anchor element <strong>&lt;<span>a</span>&gt;</strong> can create hyperlinks to different parts of the same HTML document using the  
+           <strong><span>href</span></strong> attribute to point to the desired location with <strong>&num;</strong> followed by the <strong><span>id</span></strong> 
+           of the element to link to.
+        </p>
+        
+        <div class="example">
+            <p class="teg"><strong>&lt;<span>a</span> href&equals;<span>&quot;&num;bottom&quot;</span>&gt;</strong>Take me to a bottom part of the
+                page<strong>&lt;<span>&sol;a</span>&gt;</strong></p>  
+           
+        </div>
+
+        <div class="example">
+            <p><strong>&lt;<span>div</span>&gt;</strong><br></p> 
+            <p class="teg"><strong>&lt;<span>p</span> id&equals;<span>&quot;bottom&quot;</span>&gt;</strong>A
+                bottom part of the page!<strong>&lt;<span>&sol;p</span>&gt;</strong><br></p>  
+            <p><strong>&lt;<span>&sol;div</span>&gt;</strong></p>  
+           
+        </div>
+
+        
+        <h3>Creating text links</h3>
+        <p>
+            The <strong>&lt;<span>a</span>&gt;</strong> anchor element is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, 
+            les on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, <strong>href</strong>.
+            The href determines the location the anchor element points to.
+        </p>
+          
+        <div class="example">
+            <p class="teg"><strong>&lt;<span>a</span> href&equals;<span>&quot;https&colon;&sol;&sol;developer.mozilla&period;org&sol;en-US&quot;</span>&gt;</strong>This site.<strong>&lt;<span>&sol;a</span>&gt;</strong></p>   
+           
+        </div>
+
+        
+        <h3>Creating image links</h3> 
+        <p>Images can also be used as links.</p>  
+        <div class="example">
+            <p class="teg"><strong>&lt;<span>a</span> href&equals;<span>&quot;https&colon;&sol;&sol;www&period;codecademy&period;com&quot;</span>&gt;&lt;<span>img</span> src&equals;<span>&quot;logo.jpg&quot;</span>&gt;</strong>Click this image.<strong>&lt;<span>&sol;a</span>&gt;</strong></p>   
+           
+        </div>
+
+      </main>
+      <footer id="about">
+        <img id="avatar" src="./images/mTapirina-ava.png" alt="my-img">
+        <p class="ava">About me:
+        <a href="https://www.behance.net/mtapirina" target="_blank">Maria M. Tapirina. Creative Artist - Designer</a></p>
+
+      </footer>
+     
+
 </body>
- 
-</html>
+</html> 
