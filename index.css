@@ -1,0 +1,158 @@
+
+     h1{
+        font-size: 50px;
+        font-weight: bold;
+        color: floralwhite;
+        filter: drop-shadow(2px 3px 4px black);
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+    }
+    
+    th,
+    h2{
+        color: maroon;
+    }
+    h3{
+        color: sienna;
+    }
+   
+    h2,
+    h3,
+    td,
+    th,
+    nav li 
+    {
+       font-family: Arial, sans-serif;
+    }
+    
+    p{
+        font-family: monospace; 
+        display: block;
+        width: 80%;
+        text-align: left;
+        margin: 10px auto;
+        font-size:large;
+    }
+    
+    span {
+        color: maroon;
+    }
+
+    body{
+        text-align: center;
+        background-image: url('./images/fon-64px.png');
+    }
+
+    /*Header section*/
+    
+
+    header{
+        background-image: linear-gradient( darkcyan, darkslategrey);
+        border-bottom: 4px solid floralwhite;
+        filter: drop-shadow(4px 3px 4px black);
+        position: fixed; 
+        width: 100%;
+        height: 150px;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+
+    }
+    aside{
+        display:list-item;
+    }
+
+
+    /*nav*/
+    nav{
+        position: absolute;
+        width: 90%;
+        margin: 40px auto;
+        top: 20%;
+        left: 5%;
+    }
+    .nav li {
+        display: inline-block;
+        padding-right: 2%;
+        font-size: 100%;
+        
+    }
+    .nav li a{
+        
+        color:floralwhite;
+      
+    }
+
+    /* Main*/
+    main{
+        padding-top: 150px;
+        display: inline-block;
+        width: 90%;
+        border: 6px solid sienna;
+        border-radius: 20px;
+        background-color: bisque;
+       
+    }
+
+   
+    .example{
+        font-size: large;
+        background-color:floralwhite;
+        display: inline-block;
+        width: 80%;
+        border-radius: 15px;
+        margin: 20px auto 30px auto;
+         
+     }
+
+    .teg{
+        text-align: center;
+     }
+
+    /*Table section*/
+    table{
+        width:80%;
+    }
+    td:first-child{
+        width: 10%;
+    }
+    td:last-child{
+        width: 70%;
+    }
+
+    table,th, td {
+        border: 3px solid rosybrown;
+        border-collapse: collapse;
+        background-color:floralwhite;
+        margin: 20px auto 70px auto;
+        
+     }
+    tr:hover td{
+            background: lightcyan;
+    }
+    thead th{
+        background-color: maroon;
+        color: floralwhite;
+        
+    }
+
+
+        
+    footer{
+        display: inline-block;
+        width: 50%;
+        margin: 20px auto;
+        background-color: bisque;
+        border: 6px solid sienna;
+        border-radius: 20px;
+
+    }
+
+    #avatar{
+        border-radius: 50%;
+        border: 4px solid sienna; 
+        width: 10%;  
+    }
+    .ava{
+        text-align: center;
+    }
