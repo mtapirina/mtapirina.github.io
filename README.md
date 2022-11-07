@@ -3,13 +3,12 @@ Codeacedemy Challenge: Project: Build Your Own Cheat Sheet.
 
 Your project should document at least one HTML or CSS topic. In our example project, we documented the tags and attributes used in HTML tables layouts, but you can choose any HTML or CSS topic that you’ve learned so far—the sky is the limit!
 Possible topics could be:
-HTML Tables
-Other HTML tags
-CSS selectors and specificity
-Common CSS properties
-If you choose to document HTML tags, open the hint to see how to include HTML tags as text in your code.
+* HTML Tables
+* Other HTML tags
+* CSS selectors and specificity
+* Common CSS properties
 
-When displaying HTML tag name as text, you can’t just use the < or > characters, since your browser will think you are trying to create an actual HTML tag. In order to show HTML tags as text, use &lt; to represent < and &gt; to represent >.
+*When displaying HTML tag name as text, you can’t just use the < or > characters, since your browser will think you are trying to create an actual HTML tag. In order to show HTML tags as text, use &lt; to represent < and &gt; to represent >.
 
 Your site uses HTML tables to display the documentation. Be sure to label the columns in your HTML.
 In our example site, we used tables with columns for:
