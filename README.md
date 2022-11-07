@@ -20,7 +20,7 @@ You can use these same columns or choose your own.
 
 Your site should utilize a custom color scheme. You can use any of the named CSS colors.
 
-Your site should use custom styles for any code such as HTML tags, like <h1> or CSS properties or values, like font-family. Represent code using a monospace font family and a different background color.
+Your site should use custom styles for any code such as HTML tags, like h1 or CSS properties or values, like font-family. Represent code using a monospace font family and a different background color.
 
 
 This is an HTML Cheatsheet made with HTML and CSS
