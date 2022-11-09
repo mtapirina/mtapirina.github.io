@@ -125,6 +125,7 @@
         border-collapse: collapse;
         background-color:floralwhite;
         margin: 20px auto 70px auto;
+        padding: 1%;
         
      }
     tr:hover td{
