@@ -1,5 +1,5 @@
 
-     h1{
+      h1{
         font-size: 50px;
         font-weight: bold;
         color: floralwhite;
@@ -58,6 +58,7 @@
         z-index: 5;
 
     }
+  
 
     /*nav*/
     nav{
@@ -133,6 +134,7 @@
         
     }
 
+    /*footer section*/
         
     footer{
         display: inline-block;
