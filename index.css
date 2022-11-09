@@ -58,10 +58,6 @@
         z-index: 5;
 
     }
-    aside{
-        display:list-item;
-    }
-
 
     /*nav*/
     nav{
@@ -136,7 +132,6 @@
         color: floralwhite;
         
     }
-
 
         
     footer{
